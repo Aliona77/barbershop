@@ -6,52 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbershop</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&family=Raleway:wght@700&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+    rel="stylesheet">
+     <link rel="stylesheet" href="./css/styles.css">
+       
 </head>
 
 <body>
     <header class="header">
+        <div class="container">
         <nav class="navigation">
-            <a class="logo" href="/" aria-label="логотип сайта">
+            <a class="logo link" href="/" aria-label="логотип сайта">
                 <img class="logo__img"  src="./images/header/Logo.svg" alt="логотип" width="68" height="54">
             </a>
-            <ul class="navigation__list">
+            <ul class="navigation__list list">
                 <li class="navigation__list-item">
-                    <a class="navigation__list-link" href="#">О нас</a>
+                    <a class="navigation__list-link link" href="#">О нас</a>
                 </li>
                 <li class="navigation__list-item">
-                    <a class="navigation__list-link" href="#">Услуги и цены</a>
+                    <a class="navigation__list-link link" href="#">Услуги и цены</a>
                 </li>
                 <li class="navigation__list-item">
-                    <a class="navigation__list-link" href="#">Мастера</a>
+                    <a class="navigation__list-link link" href="#">Мастера</a>
                 </li>
                 <li class="navigation__list-item">
-                    <a class="navigation__list-link" href="#">Контакты</a>
+                    <a class="navigation__list-link link" href="#">Контакты</a>
                 </li>
             </ul>
         </nav>
         <address class="address">
-            <a class="header__tel" href="tel:+380441111111">+38 044 111 11 11</a>
+            <a class="header__tel link" href="tel:+380441111111">+38 044 111 11 11</a>
         </address>
         <button class="modal-btn" type="button">онлайн-запись</button>
+        </div>
     </header>
     <main>
 
         <!-- HERO -->
 
         <section class="hero">
+            <div class="container">
             <div class="hero__left-side">
-                <ul class="social__links">
+                <ul class="social__links list">
                     <li class="social-links__item">
-                        <a class="social-links__link" href="#">Instagram</a>
+                        <a class="social-links__link link" href="#">Instagram</a>
                     </li>
                     <li class="social-links__item">
-                        <a class="social-links__link" href="#">Youtube</a>
+                        <a class="social-links__link link" href="#">Youtube</a>
                     </li>
                 </ul>
             </div>
@@ -62,12 +65,14 @@
                     Работаем быстро, осторожно и со вкусом.
                 </p>
             </div>
+            </div>
         </section>
 
         <!-- ABOUT -->
 
-        <section class="about">
-            <ul class="about__list">
+        <section class="about section">
+            <div class="container">
+            <ul class="about__list list">
                 <li class="about__list-item">
                     <img class="about__list-img" src="./images/about/about-img-1.jpg" alt="мастер бреет бороду" width="270" height="445">
                 </li>
@@ -89,14 +94,17 @@
                 <button class="modal-btn" type="button">онлайн-запись</button>
 
             </div>
+            </div>
         </section>
 
         <!-- SERVICES -->
 
-        <section class="services">
+        <section class="services section">
+            <div class="container">
             <p class="undertitle undertitle_dark-theme">Проведи время в компании лучших мастеров</p>
             <h2 class="title title_dark-theme">Услуги и цены</h2>
-            <ul class="services__list">
+            <div class="services__list-wrapper">
+            <ul class="services__list list">
                 <li class="services__list-item">
                     <span class="services__list-item-name">Мужская стрижка</span><span class="services__list-item-price">от 300 грн.</span>
                 </li>
@@ -110,7 +118,7 @@
                     <span class="services__list-item-name">Бритье опасной бритвой</span><span class="services__list-item-price">от 200 грн.</span>
                 </li>
             </ul>
-            <ul>
+            <ul class="services__list list">
                 <li class="services__list-item">
                     <span class="services__list-item-name">Cтрижка у стажера</span><span class="services__list-item-price">от 50 грн.</span>
                 </li>
@@ -124,14 +132,17 @@
                     <span class="services__list-item-name">Камуфлирование седины</span><span class="services__list-item-price">от 200 грн.</span>
                 </li>
             </ul>
+            </div>
             <button class="modal-btn" type="button">онлайн-запись</button>
+            </div>
         </section>
 
         <!--ACHIEVMENTS -->
 
-        <section class="achievments">
+        <section class="achievments section">
+            <div class="container">
             <div class="achievments__left-side">
-                <ul class="achievments__list">
+                <ul class="achievments__list list">
                     <li class="achievments__list-item">
                         <p class="achievments__list-item-counter">600</p>
                         <p class="achievments__list-item-descr">Довольных клиентов в день</p>
@@ -155,56 +166,66 @@
                 <h2 class="title title_light-theme">Почему приходят именно к нам?</h2>
                 <p class="description description_light-theme">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать. </p>
             </div>
+            </div>
         </section>
 
         <!-- MASTERS -->
 
-        <section class="masters">
+        <section class="masters section">
+            <div class="container">
             <p class="undertitle undertitle_light-theme">для настоящих ценителей атмосферы</p>
             <h2 class="title title_light-theme">Наши мастера</h2>
-            <ul class="masters__list">
+            <ul class="masters__list list">
                 <li class="masters__list-item">
                     <img class="masters__list-img" src="./images/masters/master-1.jpg" alt="мастер стрижет клиента" width="370" height="346">
+                    <div class="masters__list-content-wrapper">
                     <h3 class="masters__list-name" lang="en">John Smith</h3>
                     <p class="masters__list-position" lang="en">Extreme Barber</p>
-                    <ul class="social-list">
+                    <ul class="social-list list">
                         <li class="social-list__item"><a class="social-list__link" href="#"></a></li>
                         <li class="social-list__item"><a class="social-list__link" href="#"></a></li>
                         <li class="social-list__item"><a class="social-list__link" href="#"></a></li>
                         <li class="social-list__item"><a class="social-list__link" href="#"></a></li>
                     </ul>
+                    </div>
                 </li>
                 <li class="masters__list-item">
                     <img class="masters__list-img" src="./images/masters/master-2.jpg" alt="мастер стрижет клиента" width="370" height="346">
+                    <div class="masters__list-content-wrapper">
                     <h3 class="masters__list-name" lang="en">Michele Doe</h3>
                     <p class="masters__list-position" lang="en">Extreme Barber</p>
-                    <ul class="social-list">
+                    <ul class="social-list list">
                         <li class="social-list__item"><a class="social-list__link" href="#"></a></li>
                         <li class="social-list__item"><a class="social-list__link" href="#"></a></li>
                         <li class="social-list__item"><a class="social-list__link" href="#"></a></li>
                         <li class="social-list__item"><a class="social-list__link" href="#"></a></li>
                     </ul>
+                    </div>
                 </li>
                 <li class="masters__list-item">
                     <img class="masters__list-img" src="./images/masters/master-3.jpg" alt="мастер стрижет клиента" width="370" height="346">
+                    <div class="masters__list-content-wrapper">
                     <h3 class="masters__list-name" lang="en">Alan Black</h3>
                     <p class="masters__list-position" lang="en">Extreme Barber</p>
-                    <ul class="social-list">
+                    <ul class="social-list list">
                         <li class="social-list__item"><a class="social-list__link" href="#"></a></li>
                         <li class="social-list__item"><a class="social-list__link" href="#"></a></li>
                         <li class="social-list__item"><a class="social-list__link" href="#"></a></li>
                         <li class="social-list__item"><a class="social-list__link" href="#"></a></li>
                     </ul>
+                    </div>
                 </li>
             </ul>
+            </div>
         </section>
 
         <!-- GALLERY -->
 
-        <section class="gallery">
+        <section class="gallery section">
+            <div class="container">
             <h2 hidden>галерея работ</h2>
             <p class="undertitle undertitle_light-theme">На латинском языке “барба” означает “борода”</p>
-            <ul class="gallery__list">
+            <ul class="gallery__list list">
                 <li class="gallery__list-item">
                     <img class="gallery__list-img" src="./images/gallery/gallery-img-1.jpg" alt="мастер стрижет клиента" width="270" height="360">
                 </li>
@@ -220,6 +241,7 @@
                     <img class="gallery__list-img" src="./images/gallery/gallery-img-4.jpg" alt="мастер стрижет клиента" width="270" height="360">
                 </li>
             </ul>
+            </div>
         </section>
 
         <!-- CONTACT -->
@@ -254,15 +276,17 @@
         </div>
     </main>
     <footer class="footer">
+        <div class="container">
         <p class="copyright">&copy; Copyright 2020</p>
-       <ul class="social__links">
+       <ul class="social__links list">
        <li class="social-links__item">
-        <a class="social-links__link" href="#">Instagram</a>
+        <a class="social-links__link link" href="#">Instagram</a>
       </li>
       <li class="social-links__item">
-        <a class="social-links__link" href="#">Youtube</a>
+        <a class="social-links__link link" href="#">Youtube</a>
     </li>
     </ul>
+    </div>
     </footer>
 </body>
 
