@@ -1,4 +1,4 @@
-.social__links {
+.social-links {
   display: flex;
 
   .hero & {
@@ -9,21 +9,22 @@
 
 .social-links__item {
   &:first-child {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 
-  &::before {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 1px;
-  background-color: #303030;
-  margin-right: 40px;
-   }
+    &::before {
+      display: block;
+      content: "";
+      width: 60px;
+      height: 1px;
+      background-color: #303030;
+      margin-right: 40px;
+    }
   }
-   &:not(:last-child) {
-  margin-right: 40px;
-}
+
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
 }
 
 .social-links__link {
@@ -36,6 +37,6 @@
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }

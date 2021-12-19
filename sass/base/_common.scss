@@ -1,5 +1,5 @@
 body {
-  font-family: var(--main-font);
+  font-family: $main-font;
 }
 
 .list {
@@ -24,6 +24,7 @@ ol {
   margin: 0;
   padding: 0;
 }
+
 p {
   margin: 0;
 }

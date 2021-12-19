@@ -1,15 +1,12 @@
-//  ============ utils ============
-
 @import "./utils/visually-hidden";
 @import "./utils/variables";
+@import "./utils/mixins";
 
-//  ============ base ============
-
+// base
 @import "./base/common";
 @import "./base/container";
 
-//  ============ components ============
-
+// components
 @import "./components/section";
 @import "./components/modal-btn";
 @import "./components/social-links";
@@ -18,17 +15,13 @@
 @import "./components/title";
 @import "./components/backdrop";
 
-//  ============ layout ============
-
+// layout
 @import "./layout/header";
-@import "./layout/navigation";
 @import "./layout/hero";
 @import "./layout/about";
 @import "./layout/services";
-@import "./layout/achivments";
+@import "./layout/achievments";
 @import "./layout/masters";
 @import "./layout/gallery";
-//@import "./layout/contact";
+@import "./layout/contact";
 @import "./layout/footer";
-
-//  ============ utils============

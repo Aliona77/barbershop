@@ -9,12 +9,12 @@
   margin-bottom: 20px;
 
   &::before {
-    display: block;
     content: "";
     width: 60px;
     height: 1px;
     margin-right: 20px;
   }
+
   &_light-theme {
     color: #303030;
 
@@ -25,6 +25,7 @@
 
   &_dark-theme {
     color: rgba(157, 164, 189, 0.6);
+
     &::before {
       background-color: rgba(157, 164, 189, 0.6);
     }
